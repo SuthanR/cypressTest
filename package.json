@@ -16,7 +16,7 @@
     "url": "https://github.com/SuthanR/cypressTest/issues"
   },
   "homepage": "https://github.com/SuthanR/cypressTest#readme",
-  "dependencies": {
+  "devDependencies": {
     "cypress": "^6.8.0"
   }
 }
