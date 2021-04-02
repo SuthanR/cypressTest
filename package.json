@@ -1,0 +1,22 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "cypress e2e test for to do list web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuthanR/cypressTest.git"
+  },
+  "author": "Suthan Rajagopal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuthanR/cypressTest/issues"
+  },
+  "homepage": "https://github.com/SuthanR/cypressTest#readme",
+  "dependencies": {
+    "cypress": "^6.8.0"
+  }
+}
