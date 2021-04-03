@@ -16,7 +16,7 @@ Examples:
             | Complete| 
             | Delete  |
 
-Scenario: Login the webapp then create , update , complete & delete tasks.
+Scenario: Login the webapp then postive scenarios create , update , complete & delete tasks.
 
         When create the 'Complete' list
         When create the 'Delete' list
@@ -27,3 +27,11 @@ Scenario: Login the webapp then create , update , complete & delete tasks.
         And delete the task
         Then the deleted task should not be visible in list
     
+Scenario: Login the webapp then create negative scenarios as part of this webapp
+
+        When create the 'Neg       TC1' list
+        When create the '<p>Neg TC2</p>|' list
+        When create the 'Neg&!#$%^&(TC3' list
+        When create the '        ' list
+        And check the unlisted task
+        

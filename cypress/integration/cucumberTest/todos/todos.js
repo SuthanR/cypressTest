@@ -51,3 +51,7 @@ When('delete the task', () => {
         });
     })
 })
+
+When('check the unlisted task', () => {
+    cy.contains('.todo-list li', 'NotAva').find('.toggle').check()
+})
