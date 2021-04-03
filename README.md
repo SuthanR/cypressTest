@@ -20,11 +20,11 @@ The folder(cucumberTest) in integration folder contains the feature files that w
 
 How to generate report
 
-npm i --D mocha mochawesome mochawesome-merge mochawesome-report-generator
-Add the config in cypress.json
-Add the scripts in package.json
-npx cypress run
-npm run create:html:report
+1.npm i --D mocha mochawesome mochawesome-merge mochawesome-report-generator
+2.Add the config in cypress.json
+3.Add the scripts in package.json
+4.npx cypress run
+5.npm run create:html:report
 
 Documentation refered:
 

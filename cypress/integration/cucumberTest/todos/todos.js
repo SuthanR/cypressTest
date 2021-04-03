@@ -28,6 +28,7 @@ When('update the task Star with Wars', () => {
     cy.get('.edit').type('Wars');
 
 })
+
 When('check the tasks complete', () => {
 
     cy.contains('.todo-list li', 'Complete').find('.toggle').check()
@@ -62,5 +63,12 @@ When('check the unlisted task', () => {
 When('delete all the list sametime', () => {
 
     cy.get('.destroy').click();
+
+})
+
+When('update the task', () => {
+
+    cy.contains('.view', 'Neg').click()
+    cy.get('.edit').type('Tc8');
 
 })

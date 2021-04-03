@@ -40,3 +40,8 @@ Scenario: Login the webapp to test the negative scenario
         When create the 'NegTC6' list
         When create the 'NegTC7' list
         And delete all the list sametime
+
+Scenario: Login the webapp to test the another negative scenario
+
+        When create the 'Neg' list
+        And update the task
