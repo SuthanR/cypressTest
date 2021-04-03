@@ -18,6 +18,14 @@ Conf.js: The files defines in integration folder will pick for execution based t
 
 The folder(cucumberTest) in integration folder contains the feature files that will be executed as part of test and the step defination or .js files has the cypress commands to execute.
 
+How to generate report
+
+npm i --D mocha mochawesome mochawesome-merge mochawesome-report-generator
+Add the config in cypress.json
+Add the scripts in package.json
+npx cypress run
+npm run create:html:report
+
 Documentation refered:
 
 Commands: https://docs.cypress.io/api/table-of-contents
