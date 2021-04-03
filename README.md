@@ -1,6 +1,10 @@
 # cypressTest
 cypress e2e test for to do web app
 
+What is cypress
+
+Cypress is a next generation front end testing tool built for the modern web. We address the key pain points developers and QA engineers face when testing modern applications.
+
 How to Start
 
 1. Clone the project https://github.com/SuthanR/cypressTest.git
@@ -13,3 +17,11 @@ Folder and config:
 Conf.js: The files defines in integration folder will pick for execution based the cypress.json config.As I used cucumber BDD sytle, the config is define in plugin index.js
 
 The folder(cucumberTest) in integration folder contains the feature files that will be executed as part of test and the step defination or .js files has the cypress commands to execute.
+
+Documentation refered:
+
+Commands: https://docs.cypress.io/api/table-of-contents
+
+Plugins: https://docs.cypress.io/plugins/directory
+
+
