@@ -40,11 +40,13 @@ When('the task should be displayed as completed', () => {
 })
 
 When('the deleted task should not be visible in list', () => {
+
     cy.get('.view').should('not.have.value', 'Delete')
 
 })
 
 When('delete the task', () => {
+
     cy.contains('.todo-list li', 'Delete').within(el => {
         cy.get(".destroy").click({
             force: true
@@ -53,5 +55,12 @@ When('delete the task', () => {
 })
 
 When('check the unlisted task', () => {
+
     cy.contains('.todo-list li', 'NotAva').find('.toggle').check()
+})
+
+When('delete all the list sametime', () => {
+
+    cy.get('.destroy').click();
+
 })

@@ -1,10 +1,10 @@
-Feature: As a user of to do list web app, I want to add the tasks , update, complete and delete the list.
+Feature: As a user of to do list web app, I want to test create, update, complete and delete functionality.
 
 Background: Background name
 
         Given sucessfully launch the to do web app
 
-Scenario Outline: Login the webapp and validate create tasks with different input
+Scenario Outline: Login the webapp to create the tasks with different inputs
 
         When create the '<tasks>' list
         Then the list of '<tasks>' should be visible
@@ -16,7 +16,7 @@ Examples:
             | Complete| 
             | Delete  |
 
-Scenario: Login the webapp then postive scenarios create , update , complete & delete tasks.
+Scenario: Login the webapp then test postive scenarios create , update , complete & delete tasks.
 
         When create the 'Complete' list
         When create the 'Delete' list
@@ -27,7 +27,7 @@ Scenario: Login the webapp then postive scenarios create , update , complete & d
         And delete the task
         Then the deleted task should not be visible in list
     
-Scenario: Login the webapp then create negative scenarios as part of this webapp
+Scenario: Login the webapp then test negative scenarios as part of this webapp
 
         When create the 'Neg       TC1' list
         When create the '<p>Neg TC2</p>|' list
@@ -35,3 +35,8 @@ Scenario: Login the webapp then create negative scenarios as part of this webapp
         When create the '        ' list
         And check the unlisted task
         
+Scenario: Login the webapp to test the negative scenario
+
+        When create the 'NegTC6' list
+        When create the 'NegTC7' list
+        And delete all the list sametime
