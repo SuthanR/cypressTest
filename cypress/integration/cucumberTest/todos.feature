@@ -6,7 +6,7 @@ Background: Background name
 
 Scenario Outline: Login the webapp and validate create tasks with different input
 
-        When enter the '<tasks>' list
+        When create the '<tasks>' list
         Then the list of '<tasks>' should be visible
         
 Examples:
@@ -15,4 +15,15 @@ Examples:
             | Edit    |
             | Complete| 
             | Delete  |
+
+Scenario: Login the webapp then create , update , complete & delete tasks.
+
+        When create the 'Complete' list
+        When create the 'Delete' list
+        When create the 'Star' list
+        And update the task Star with Wars
+        And check the tasks complete
+        Then the task should be displayed as completed 
+        And delete the task
+        Then the deleted task should not be visible in list
     
